@@ -7,6 +7,7 @@
       "iso_checksum": "80f498a1f9daa76bc911ae13692e4495",
       "iso_checksum_type": "md5",
       "ssh_username": "loic",
+      "ssh_password": "loic",
       "ssh_wait_timeout": "2h",
       "shutdown_command": "shutdown -P now",
       "boot_wait": "5s",
