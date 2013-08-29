@@ -19,5 +19,12 @@
         "<enter>"
       ]
     }
+  ],
+
+  "post-processors": [
+    {
+      "type": "vagrant",
+      "keep_input_artifact": true
+    }
   ]
 }
