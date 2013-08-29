@@ -8,7 +8,13 @@
       "iso_checksum_type": "md5",
       "ssh_username": "loic",
       "ssh_wait_timeout": "30s",
-      "shutdown_command": "shutdown -P now"
+      "shutdown_command": "shutdown -P now",
+      "boot_wait": "5s",
+      "boot_command": [
+        "<esc><wait>",
+        "auto url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg",
+        "<enter>"
+      ]
     }
   ]
 }
