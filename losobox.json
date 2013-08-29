@@ -6,6 +6,7 @@
       "iso_url": "http://cdimage.debian.org/debian-cd/7.1.0/amd64/iso-cd/debian-7.1.0-amd64-netinst.iso",
       "iso_checksum": "80f498a1f9daa76bc911ae13692e4495",
       "iso_checksum_type": "md5",
+      "http_directory": "http",
       "ssh_username": "loic",
       "ssh_password": "loic",
       "ssh_wait_timeout": "2h",
