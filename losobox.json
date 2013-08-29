@@ -11,6 +11,7 @@
       "ssh_password": "loic",
       "ssh_wait_timeout": "2h",
       "shutdown_command": "shutdown -P now",
+      "headless": false,
       "boot_wait": "5s",
       "boot_command": [
         "<esc><wait>",
