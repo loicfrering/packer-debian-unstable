@@ -10,7 +10,7 @@
       "ssh_username": "loic",
       "ssh_password": "loic",
       "ssh_wait_timeout": "2h",
-      "shutdown_command": "shutdown -P now",
+      "shutdown_command": "sudo halt -p",
       "headless": false,
       "boot_wait": "5s",
       "boot_command": [
