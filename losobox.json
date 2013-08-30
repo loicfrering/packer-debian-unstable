@@ -3,8 +3,9 @@
     {
       "type": "virtualbox",
       "guest_os_type": "Debian_64",
-      "iso_url": "http://cdimage.debian.org/debian-cd/7.1.0/amd64/iso-cd/debian-7.1.0-amd64-netinst.iso",
-      "iso_checksum": "80f498a1f9daa76bc911ae13692e4495",
+      "disk_size": 6000,
+      "iso_url": "http://ftp.fr.debian.org/debian/dists/unstable/main/installer-amd64/current/images/netboot/mini.iso",
+      "iso_checksum": "4e3607003a8ba110518d2162288a5b5a",
       "iso_checksum_type": "md5",
       "http_directory": "http",
       "ssh_username": "loic",
