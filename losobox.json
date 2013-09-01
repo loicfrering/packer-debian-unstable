@@ -27,7 +27,8 @@
       "type": "shell",
       "scripts": [
         "scripts/vagrant.sh",
-        "scripts/virtualbox.sh"
+        "scripts/virtualbox.sh",
+        "scripts/zerodisk.sh"
       ],
       "execute_command": "echo 'loic' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'"
     }
