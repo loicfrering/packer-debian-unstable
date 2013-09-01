@@ -12,7 +12,7 @@
       "ssh_password": "loic",
       "ssh_wait_timeout": "2h",
       "shutdown_command": "echo 'loic' | sudo -S halt -p",
-      "headless": false,
+      "headless": true,
       "boot_wait": "5s",
       "boot_command": [
         "<esc><wait>",
