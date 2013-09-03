@@ -47,6 +47,7 @@
   "post-processors": [
     {
       "type": "vagrant",
+      "output": "packer_debian-unstable_{{.Provider}}.box",
       "keep_input_artifact": true
     }
   ]
