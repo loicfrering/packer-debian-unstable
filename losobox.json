@@ -1,8 +1,8 @@
 {
   "variables": {
-    "fullname": "Loïc Frering",
-    "username": "loic",
-    "password": "loic"
+    "fullname": "Vagrant",
+    "username": "vagrant",
+    "password": "vagrant"
   },
 
   "builders": [
