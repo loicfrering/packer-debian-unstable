@@ -1,4 +1,10 @@
 {
+  "variables": {
+    "fullname": "Loïc Frering",
+    "username": "loic",
+    "password": "loic"
+  },
+
   "builders": [
     {
       "type": "virtualbox",
@@ -8,15 +14,19 @@
       "iso_checksum": "4e3607003a8ba110518d2162288a5b5a",
       "iso_checksum_type": "md5",
       "http_directory": "http",
-      "ssh_username": "loic",
-      "ssh_password": "loic",
-      "ssh_wait_timeout": "2h",
-      "shutdown_command": "echo 'loic' | sudo -S halt -p",
+      "ssh_username": "{{user `username`}}",
+      "ssh_password": "{{user `password`}}",
+      "ssh_wait_timeout": "40m",
+      "shutdown_command": "echo '{{user `password`}}' | sudo -S halt -p",
       "headless": true,
       "boot_wait": "5s",
       "boot_command": [
         "<esc><wait>",
-        "auto url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg",
+        "auto url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg ",
+        "passwd/user-fullname={{user `fullname`}} ",
+        "passwd/username={{user `username`}} ",
+        "passwd/user-password={{user `password`}} ",
+        "passwd/user-password-again={{user `password`}} ",
         "<enter>"
       ]
     }
@@ -30,7 +40,7 @@
         "scripts/virtualbox.sh",
         "scripts/zerodisk.sh"
       ],
-      "execute_command": "echo 'loic' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'"
+      "execute_command": "echo '{{user `password`}}' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'"
     }
   ],
 
