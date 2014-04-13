@@ -7,7 +7,7 @@
 
   "builders": [
     {
-      "type": "virtualbox",
+      "type": "virtualbox-iso",
       "guest_os_type": "Debian_64",
       "disk_size": 6000,
       "iso_url": "http://ftp.fr.debian.org/debian/dists/unstable/main/installer-amd64/current/images/netboot/mini.iso",
