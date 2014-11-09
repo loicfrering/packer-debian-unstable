@@ -38,6 +38,7 @@
       "scripts": [
         "scripts/vagrant.sh",
         "scripts/virtualbox.sh",
+        "scripts/ansible.sh",
         "scripts/zerodisk.sh"
       ],
       "execute_command": "echo '{{user `password`}}' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'"
