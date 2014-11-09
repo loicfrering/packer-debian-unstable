@@ -16,5 +16,6 @@ chmod 600 /home/$SUDO_USER/.ssh/authorized_keys
 chown -R $SUDO_USER /home/$SUDO_USER/.ssh
 
 # Install NFS for Vagrant
+apt-get -y install aptitude
 aptitude update
 aptitude -y install --without-recommends nfs-common
